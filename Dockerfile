@@ -13,6 +13,12 @@ RUN tlmgr update texlive-scripts
 # update packages
 RUN tlmgr update --all
 
+# install required LaTeX packages
+RUN tlmgr install babel-german
+
+# install koma-script
+RUN tlmgr install koma-script
+
 # install all the packages
 RUN tlmgr install scheme-full
 
